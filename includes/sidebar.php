@@ -5,7 +5,7 @@
     <ul class="space-y-4">
       <li><a href="index.php?page=home" class="block hover:text-green-300">Home</a></li>
       <li><a href="index.php?page=about" class="block hover:text-green-300">About</a></li>
-      <li><a href="index.php?page=shop" class="block hover:text-green-300">Shop</a></li>
+      <li><a href="index.php?page=product" class="hover:text-green-300">Products</a></li>
       <li><a href="index.php?page=contact" class="block hover:text-green-300">Contact</a></li>
       <li><button id="close-menu" class="text-red-300">Close</button></li>
     </ul>

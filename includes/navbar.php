@@ -1,12 +1,12 @@
 <nav class="bg-green-800 text-white px-4 py-3 flex justify-between items-center shadow-md">
-  <div class="text-2xl font-bold">Herbal Doctor</div>
+  <div class="text-2xl font-bold">Daktari Ramadhan Juma Daudi</div>
 
   <!-- Desktop menu -->
   <ul class="hidden md:flex space-x-6">
     <li><a href="index.php?page=home" class="hover:text-green-300">Home</a></li>
     <li><a href="index.php?page=about" class="hover:text-green-300">About</a></li>
-    <li><a href="index.php?page=product" class="hover:text-green-300">Product</a></li>
-    <li><a href="index.php?page=shop" class="hover:text-green-300">Shop</a></li>
+    <li><a href="index.php?page=product" class="hover:text-green-300">Products</a></li>
+    <!-- <li><a href="index.php?page=shop" class="hover:text-green-300">Shop</a></li> -->
     <li><a href="index.php?page=contact" class="hover:text-green-300">Contact</a></li>
   </ul>
 

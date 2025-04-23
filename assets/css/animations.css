@@ -1,0 +1,76 @@
+/* animations.css */
+
+.pre-fade {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+  }
+  
+  /* Animation for fade-in-up on scroll */
+.animate-fade-in-up {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+  }
+  
+  /* When the element is visible */
+  .animate-fade-in-up.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  /* Main content styles */
+  .main-container {
+    min-height: 100vh;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1.5rem;
+    background-color: black;
+    border-radius: 16px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+  }
+  
+  .main-container:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 30px rgba(0, 128, 0, 0.5); /* green glow */
+  }
+  
+  .main-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 16px;
+    position: relative;
+    min-height: 100vh;
+    background-color: #0b3d23;
+
+  }
+  
+  /* animation.css */
+.product-card {
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.product-card:hover {
+  transform: translateY(-10px) rotate(1deg);
+  box-shadow: 0 15px 25px rgba(34, 197, 94, 0.3);
+}
+.product-card img:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+
+.perspective {
+  perspective: 1000px;
+}
+
+.transform-style-3d {
+  transform-style: preserve-3d;
+}
+
+.hover\:rotate-y-6:hover {
+  transform: rotateY(6deg);
+}

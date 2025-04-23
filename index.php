@@ -1,16 +1,18 @@
 <?php
 $page = $_GET['page'] ?? 'home';
-$allowed_pages = ['home', 'shop', 'about', 'contact', 'product'];
+$allowed_pages = ['home', 'shop', 'about', 'contact', 'product', 'product_profile'];
+
+
 
 include('includes/navbar.php');
 include('includes/sidebar.php');
-include 'includes/header.php';
+include('includes/header.php');
 
 if (in_array($page, $allowed_pages)) {
-  include "pages/$page.php";
+    include "pages/{$page}.php";
 } else {
-  echo "<h2>Page not found</h2>";
+    echo "<h2>Page not found</h2>";
 }
 
-include 'includes/footer.php';
-
+include('includes/footer.php');
+?>

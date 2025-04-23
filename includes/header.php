@@ -10,6 +10,31 @@
   <script src="assets/js/scroll-animate.js"></script>
 
   <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/custom.css">
+
+  <style>
+  .animate-fade-in-up {
+    animation: fadeInUp 1s ease-out forwards;
+  }
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(40px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  .card-3d {
+    transition: transform 0.4s, box-shadow 0.4s;
+  }
+  .card-3d:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 20px 40px rgba(0, 128, 0, 0.3);
+  }
+</style>
 </head>
 <body class="bg-gray-100 text-gray-800 m-0 p-0">
 
