@@ -30,25 +30,28 @@ $filter = $_GET['category'] ?? '';
 <div class="flex flex-col md:flex-row max-w-7xl mx-auto py-10 px-4">
 
   <!-- Sidebar -->
-<aside class="md:w-1/4 w-full mb-6 md:mb-0 md:mr-8 bg-gradient-to-r from-green-700 via-green-600 to-green-500 p-6 rounded-lg shadow-xl transform transition-all hover:scale-105">
-  <h2 class="text-xl font-bold mb-4 text-white">Product Categories</h2>
+<aside class="md:w-1/4 w-full mb-6 md:mb-0 md:mr-8 bg-gradient-to-r from-purple-700 via-purple-600 to-purple-500 p-6 rounded-lg shadow-xl transform transition-all hover:scale-105">
+<div class="bg-black p-3 rounded-lg shadow-md w-full">
+  <h2 class="text-xl font-bold mb-4 text-purple-800">Product Categories</h2>
+</div>
+
   <div class="space-y-4">
     <details class="group">
-      <summary class="cursor-pointer font-semibold text-white hover:text-green-300 transition duration-300">Cleansing</summary>
+      <summary class="cursor-pointer font-semibold text-white hover:text-purple-300 transition duration-300">Cleansing</summary>
       <ul class="ml-4 mt-2 text-sm text-gray-200 space-y-1">
-        <li><a href="index.php?page=product&category=Body Detox" class="hover:text-green-300">Body Detox</a></li>
+        <li><a href="index.php?page=product&category=Body Detox" class="hover:text-purple-300">Body Detox</a></li>
       </ul>
     </details>
     <details class="group">
-      <summary class="cursor-pointer font-semibold text-white hover:text-green-300 transition duration-300">Pain Relief</summary>
+      <summary class="cursor-pointer font-semibold text-white hover:text-purple-300 transition duration-300">Pain Relief</summary>
       <ul class="ml-4 mt-2 text-sm text-gray-200 space-y-1">
-        <li><a href="index.php?page=product&category=Muscle & Joint" class="hover:text-green-300">Muscle & Joint</a></li>
+        <li><a href="index.php?page=product&category=Muscle & Joint" class="hover:text-purple-300">Muscle & Joint</a></li>
       </ul>
     </details>
     <details class="group">
-      <summary class="cursor-pointer font-semibold text-white hover:text-green-300 transition duration-300">Immunity</summary>
+      <summary class="cursor-pointer font-semibold text-white hover:text-purple-300 transition duration-300">Immunity</summary>
       <ul class="ml-4 mt-2 text-sm text-gray-200 space-y-1">
-        <li><a href="index.php?page=product&category=Daily Wellness" class="hover:text-green-300">Daily Wellness</a></li>
+        <li><a href="index.php?page=product&category=Daily Wellness" class="hover:text-purple-300">Daily Wellness</a></li>
       </ul>
     </details>
   </div>
@@ -60,7 +63,7 @@ $filter = $_GET['category'] ?? '';
   <!-- Search -->
   <form method="GET" action="index.php" class="mb-6">
     <input type="hidden" name="page" value="product">
-    <input id="searchInput" type="text" name="search" value="<?= htmlspecialchars($search ?? '') ?>" placeholder="Search products..." class="w-full p-4 border border-green-300 rounded-lg shadow-md focus:outline-none focus:ring-4 focus:ring-green-200 transition-all duration-300" />
+    <input id="searchInput" type="text" name="search" value="<?= htmlspecialchars($search ?? '') ?>" placeholder="Search products..." class="w-full p-4 border border-purple-300 rounded-lg shadow-md focus:outline-none focus:ring-4 focus:ring-purple-200 transition-all duration-300" />
   </form>
 
   <!-- Products Grid -->
@@ -73,11 +76,11 @@ $filter = $_GET['category'] ?? '';
       $matchCategory = $filter ? $product['subcategory'] === $filter : true;
       if ($matchSearch && $matchCategory):
     ?>
-      <div class="product-card bg-gradient-to-br from-white via-green-50 to-green-100 p-5 rounded-2xl shadow-lg transform transition-transform duration-300 hover:-translate-y-3 hover:rotate-1 hover:shadow-2xl border border-green-200">
+      <div class="product-card bg-gradient-to-br from-white via-purple-50 to-purple-100 p-5 rounded-2xl shadow-lg transform transition-transform duration-300 hover:-translate-y-3 hover:rotate-1 hover:shadow-2xl border border-purple-200">
         <img src="<?= $product['image'] ?>" alt="<?= $product['name'] ?>" class="w-full h-44 object-cover rounded-lg shadow-md mb-4 transition-transform duration-300 hover:scale-105">
-        <h3 class="text-xl font-bold text-green-900 mb-1"><?= htmlspecialchars($product['name']) ?></h3>
+        <h3 class="text-xl font-bold text-purple-900 mb-1"><?= htmlspecialchars($product['name']) ?></h3>
         <p class="text-sm text-gray-700 mb-4"><?= substr($product['description'], 0, 80) ?>...</p>
-        <a href="index.php?page=product_profile&product=<?= urlencode($product['name']) ?>" class="inline-block bg-green-600 text-white px-4 py-2 rounded-full text-sm font-semibold shadow hover:bg-green-700 transition-colors duration-300">View Product</a>
+        <a href="index.php?page=product_profile&product=<?= urlencode($product['name']) ?>" class="inline-block bg-purple-600 text-white px-4 py-2 rounded-full text-sm font-semibold shadow hover:bg-purple-700 transition-colors duration-300">View Product</a>
       </div>
     <?php endif; endforeach; ?>
   </div>

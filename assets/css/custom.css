@@ -1,0 +1,43 @@
+body.custom-bg {
+    background-image: url('../images/bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+  }
+/* Advert Slider Styles */
+.advert-slider {
+    background-color: #09a538; /* light green background */
+  }
+  
+#advert-slider {
+position: relative;
+width: 100%;
+max-width: 1200px; /* you can adjust the max-width as needed */
+margin: 0 auto;
+overflow: hidden;
+}
+/* Ensures all slides are same height */
+#advertSlider img {
+    height: 16rem; /* h-64 in Tailwind */
+  }
+  
+.slider-items {
+display: flex;
+transition: transform 1s ease-in-out;
+}
+
+.slide {
+min-width: 100%;
+}
+
+@keyframes slide {
+0% { transform: translateX(0); }
+100% { transform: translateX(-100%); }
+}
+
+/* Optional: Add a slight shadow or effect to the images */
+.slider-items img {
+border-radius: 15px;
+box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
