@@ -112,7 +112,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </div>
         <div class="flex items-start gap-4">
           <i class="fas fa-phone text-purple-600 mt-1"></i>
-          <p>+254 700 000 000</p>
+          <p>+254 799928284</p>
         </div>
         <div class="flex items-start gap-4">
           <i class="fas fa-envelope text-purple-600 mt-1"></i>
