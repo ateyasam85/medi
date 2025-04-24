@@ -1,12 +1,16 @@
 <?php
+
+
+include('includes/header.php');
+include('includes/navbar.php');
+include('includes/sidebar.php');
+
 $page = $_GET['page'] ?? 'home';
 $allowed_pages = ['home', 'shop', 'about', 'contact', 'product', 'product_profile'];
 
 
 
-include('includes/navbar.php');
-include('includes/sidebar.php');
-include('includes/header.php');
+
 
 if (in_array($page, $allowed_pages)) {
     include "pages/{$page}.php";

@@ -112,11 +112,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </div>
         <div class="flex items-start gap-4">
           <i class="fas fa-phone text-purple-600 mt-1"></i>
-          <p>+254 700 123 456</p>
+          <p>+254 700 000 000</p>
         </div>
         <div class="flex items-start gap-4">
           <i class="fas fa-envelope text-purple-600 mt-1"></i>
-          <p>info@daktariramadhan.co.ke</p>
+          <p>daktariramadhan91@gmail.com</p>
         </div>
       </div>
 
