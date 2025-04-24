@@ -16,7 +16,7 @@
 </section>
 
 <!-- MISSION, VISION, STORY -->
-<section class="py-20 bg-white">
+<section class="py-20 bg-black">
   <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-3 gap-10" data-aos="fade-up">
     <div class="bg-green-50 p-6 rounded-xl shadow-lg hover:shadow-2xl transition duration-700">
       <h3 class="text-2xl font-bold text-green-800 mb-2">Our Mission</h3>

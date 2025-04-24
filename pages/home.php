@@ -26,9 +26,9 @@ error_reporting(E_ALL);
   </div>
   <div class="absolute inset-0 bg-purple-900 bg-opacity-30 z-10"></div>
   <div class="relative z-20 flex flex-col items-center justify-center h-full text-center px-4">
-    <h1 class="text-4xl md:text-6xl font-extrabold text-white drop-shadow-lg mb-4">Ancient Wisdom, Powerful Healing</h1>
+    <h1 class="text-4xl md:text-6xl font-extrabold text-white drop-shadow-lg mb-4">Ancient Spells, Powerful Portions</h1>
     <p class="text-xl md:text-2xl mb-6 max-w-3xl">
-      Experience the mystical touch of African traditional healing with Daktari Ramadhan Juma.
+      Experience the mystical touch of African traditional spells and portions with Daktari Ramadhan Juma.
     </p>
   </div>
 </section>

@@ -12,13 +12,13 @@
 
   <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
   <script src="https://kit.fontawesome.com/yourkit.js" crossorigin="anonymous"></script>
-  <script src="assets/js/hero-slider.js"></script>
-  <script src="assets/js/scroll-animate.js"></script>
+  <script src="../assets/js/hero-slider.js"></script>
+  <script src="../assets/js/scroll-animate.js"></script>
  
 
-  <link rel="stylesheet" href="assets/css/style.css">
-  <link rel="stylesheet" href="assets/css/style.css">
-  <link rel="stylesheet" href="assets/css/custom.css">
+  <link rel="stylesheet" href="../assets/css/animations.css">
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="../assets/css/custom.css">
 
   <style>
 
@@ -53,6 +53,10 @@
 <!-- Main Content -->
 <div class="md:ml-50 flex justify-center items-center min-h-screen px-4 relative"> <!-- Added 'relative' to allow absolute positioning inside -->
   
-    <main class="min-h-screen w-full max-w-7xl p-6 bg-black rounded-lg shadow-2xl transform hover:scale-105 transition-all duration-300 ease-in-out">
+    <main class="main-neon min-h-screen w-full max-w-7xl p-6 bg-black rounded-lg shadow-2xl transform hover:scale-105 transition-all duration-300 ease-in-out">
+
+
+
+
        <!-- main content  -->
   
