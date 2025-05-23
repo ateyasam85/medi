@@ -3,7 +3,7 @@ ServerSignature Off
 
 Options -Indexes
 
-# Prevent file browsing
+# Prevent file browsing ad
 Options -Indexes
 
 # Deny access to sensitive files
