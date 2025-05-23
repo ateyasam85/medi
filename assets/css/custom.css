@@ -45,9 +45,9 @@ box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 /* Floating WhatsApp icon */
 .whatsapp-float {
   position: fixed;
-  bottom: 70px; /* Increased from 20px to lift it above the bar */
+  bottom: 80px; /* Sits above the bar */
   right: 20px;
-  z-index: 9999; /* Higher than the bar */
+  z-index: 10000;
   background-color: #25D366;
   padding: 10px;
   border-radius: 50%;
@@ -76,7 +76,7 @@ box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   padding: 15px 10px;
   font-size: 18px;
   font-weight: bold;
-  z-index: 9998; /* Lower than the floating icon */
+  z-index: 9999;
   box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.2);
 }
 
@@ -88,3 +88,23 @@ box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 .whatsapp-bar:hover {
   background-color: #1ebe57;
 }
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+  .whatsapp-float {
+    bottom: 90px; /* Slightly higher for small screens */
+    right: 15px;
+    padding: 8px;
+  }
+
+  .whatsapp-float img {
+    width: 36px;
+    height: 36px;
+  }
+
+  .whatsapp-bar {
+    font-size: 16px;
+    padding: 12px 8px;
+  }
+}
+

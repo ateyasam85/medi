@@ -10,17 +10,17 @@
 <script src="assets/js/advert-slider.js"></script>
 
 <!-- WhatsApp Floating Button -->
-<a href="https://wa.me/254799928284?text=Hello%20Daktari%2C%20I%20need%20your%20help." 
+<a href="https://wa.me/254799928284?text=Hello%20Daktari%2C%20I%20need%20your%20help.%20Found%20your%20on%20the%20website." 
    class="whatsapp-float" 
    target="_blank" 
    aria-label="Chat on WhatsApp">
-   <img src="assets/icons/whatsapp-icon.png" alt="WhatsApp Chat" />
+   <img src="assets/icons/whatsapp-icon.png" alt="Chat with me on WhatsApp" />
 </a>
 
 <!-- WhatsApp Fixed Bar -->
 <div class="whatsapp-bar">
-  <a href="https://wa.me/254799928284?text=Hello%20Daktari%2C%20I%20need%20your%20help." target="_blank">
-    <span>📱 Connect Daktari Ramadhan Juma Daudi on WhatsApp Now!!!</span>
+  <a href="https://wa.me/254799928284?text=Hello%20Daktari%2C%20I%20need%20your%20help.%20Found%20your%20on%20the%20website." target="_blank">
+    <span>📱💬 Connect with Daktari Ramadhan Juma Daudi on WhatsApp Now!!!</span>
   </a>
 </div>
 
