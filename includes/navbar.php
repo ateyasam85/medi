@@ -1,5 +1,5 @@
 <nav class="bg-gradient-to-r from-black via-purple-800 to-black text-white px-4 py-3 flex justify-between items-center shadow-md">
-  <div class="text-2xl font-bold"><a href="index.php?page=home" class="hover:text-purple-300">Daktari Ramadhan Juma Daudi</a></div>
+  <div class="text-2xl font-bold"><a href="index.php?page=home" class="hover:text-purple-300">Daktari Ramadhan Juma Daudi +254799928284</a></div>
 
   <!-- Desktop menu -->
   <ul class="hidden md:flex space-x-6">

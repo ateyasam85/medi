@@ -1,0 +1,40 @@
+Header unset X-Powered-By
+ServerSignature Off
+
+Options -Indexes
+
+# Prevent file browsing
+Options -Indexes
+
+# Deny access to sensitive files
+<FilesMatch "\.(env|htaccess|ini|phps|fla|psd|log|sh)$">
+  Order allow,deny
+  Deny from all
+</FilesMatch>
+
+# Rewrite URLs to hide .php
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([a-zA-Z0-9_-]+)$ $1.php [L]
+
+# Hide PHP version
+ServerSignature Off
+Header unset X-Powered-By
+RewriteEngine On
+
+# Remove .php extension from URL
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.php -f
+RewriteRule ^(.*)$ $1.php [L,QSA]
+
+# Prevent access to config files
+<FilesMatch "\.(htaccess|env|git|ini|log|sh|json|md)$">
+  Order allow,deny
+  Deny from all
+</FilesMatch>
+
+<FilesMatch "^.*\.(env|gitignore|htaccess|ini|log|json|lock|md|bak)$">
+  Order allow,deny
+  Deny from all
+</FilesMatch>
+
